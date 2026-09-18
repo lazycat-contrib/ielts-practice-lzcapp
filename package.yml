@@ -1,0 +1,15 @@
+package: community.lazycat.app.ielts-practice
+version: 0.6.2
+name: IELTS Atlas
+description: "IELTS reading & listening practice system (pure frontend, local storage)"
+min_os_version: 1.5.0
+author: gtiipoi
+license: GPL-3.0
+homepage: https://github.com/gtiipoi/ielts-practice
+locales:
+  zh:
+    name: "IELTS Atlas"
+    description: "雅思阅读与听力练习系统：题库浏览、套题练习、练习记录、错题分析、词汇辅助，数据保存在本地"
+  en:
+    name: "IELTS Atlas"
+    description: "IELTS reading & listening practice system (pure frontend, local storage)"

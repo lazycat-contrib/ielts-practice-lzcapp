@@ -1,0 +1,30 @@
+version: 1
+
+project:
+  root: .
+  build_config: lzc-build.yml
+  package_file: package.yml
+  output: dist/ielts-practice.lpk
+  target_arch: amd64
+
+update:
+  strategy: publish
+  allow_downgrade: false
+  version_source:
+    type: git
+
+build:
+  run_buildscript: false
+
+# 静态 Web 应用：无 Docker 镜像，content/ 为上游运行时文件（sync-upstream.yml 自动同步）
+
+images: []
+
+stores:
+  official:
+    enabled: false
+  private:
+    enabled: true
+    skip_if_version_exists: true
+    name: IELTS Atlas
+    summary: "IELTS reading & listening practice system (pure frontend)"
